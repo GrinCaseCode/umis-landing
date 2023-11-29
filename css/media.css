@@ -615,6 +615,9 @@
 	.mobile-order-3 {
 		order: 3;
 	}
+	.footer .logo-wrap {
+		margin-top: 3px;
+	}
 }
 
 /* Small Devices, Tablets */
