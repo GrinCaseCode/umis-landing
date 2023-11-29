@@ -555,9 +555,6 @@
 	.footer-bottom .row > div:nth-child(2n) {
 		text-align: right;
 	}
-	.footer-bottom .row {
-		align-items: flex-start !important;
-	}
 	.sandwich {
 		margin-left: 25px;
 		display: flex;
