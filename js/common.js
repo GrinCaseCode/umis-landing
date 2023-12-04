@@ -18,6 +18,8 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$menu.removeClass("fixed").addClass("default");
 }
 
+
+
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
@@ -99,6 +101,26 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		]
 	});
 
+	$('.slider-modal').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		touchThreshold: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				arrows: false,
+				dots: true,
+			}
+		}
+		]
+	});
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 
@@ -109,7 +131,14 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//Документация: http://fancybox.net/howto
 	//<a class="fancybox"><img src="image.jpg" /></a>
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	$(".fancybox").fancybox();
+ $(".fancybox").fancybox({
+    beforeShow : function(){
+      setTimeout(function () {
+        $('.slider-modal').slick('setPosition');
+      }, 10); 
+      
+    }
+  });
 
 
 	//Кнопка "Наверх"

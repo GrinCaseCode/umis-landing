@@ -550,10 +550,13 @@ form {
 .checkbox label input:checked + span:after {
 	opacity: 1;
 }
+.content-modal .checkbox label > span:before,
 .modal-wrap .checkbox label > span:before,
 .form-consultation .checkbox label > span:before {
 	border-color: #fff;
 }
+.content-modal .checkbox,
+.content-modal .checkbox label > span:after,
 .modal-wrap .checkbox,
 .modal-wrap .checkbox label > span:after,
 .form-consultation .checkbox,
@@ -1054,4 +1057,69 @@ form {
 .modal-wrap .checkbox {
 	margin-top: 23px;
 	justify-content: center;
+}
+.content-modal {
+	padding: 65px 60px;
+background: #333F48;
+color: #fff;
+font-weight: 400;
+}
+.fancybox-overlay {
+	background: rgba(17, 87, 64, 0.2);
+}
+.title-block {
+	font-size: 24px;
+font-weight: 700;
+line-height: 140%;
+text-transform: uppercase;
+}
+.content-modal .title-block {
+	margin-bottom: 15px;
+}
+.row .content-modal__right {
+	padding-left: 95px;
+}
+.row.row_form {
+	margin: 0 -5px;
+}
+.row.row_form > div {
+	padding: 0 5px;
+}
+.bottom-form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.content-modal .item-form input {
+	height: 50px;
+}
+.bottom-form .checkbox {
+	margin-top: 0;
+}
+.content-modal .row_form {
+	margin-top: 45px;
+}
+.modal-block .container {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: 0;
+	padding: 0;
+}
+.image-card img {
+	max-width: 100%;
+}
+.slider-modal {
+	margin-right: -35px;
+}
+.slider-modal__item img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.slider-modal .slick-prev {
+	left: 8px;
+}
+.slider-modal .slick-next {
+	right: 8px;
 }
