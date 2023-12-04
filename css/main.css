@@ -1040,9 +1040,6 @@ form {
 .fancybox-close::before {
 	content: "\f00d";
 }
-.fancybox-inner {
-	overflow: visible !important;
-}
 .modal-wrap .btn-main {
 	width: 100%;
 }
@@ -1060,18 +1057,18 @@ form {
 }
 .content-modal {
 	padding: 65px 60px;
-background: #333F48;
-color: #fff;
-font-weight: 400;
+	background: #333F48;
+	color: #fff;
+	font-weight: 400;
 }
 .fancybox-overlay {
 	background: rgba(17, 87, 64, 0.2);
 }
 .title-block {
 	font-size: 24px;
-font-weight: 700;
-line-height: 140%;
-text-transform: uppercase;
+	font-weight: 700;
+	line-height: 140%;
+	text-transform: uppercase;
 }
 .content-modal .title-block {
 	margin-bottom: 15px;
